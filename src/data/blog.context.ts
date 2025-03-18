@@ -46,7 +46,7 @@ export class Blog {
     return db.blog.update({
       where: { id },
       data: {
-        content: input.content ?? blog.content,
+        content: input.content ?? blog.content, 
         title: input.title ?? blog.title,
       },
     });

@@ -14,7 +14,6 @@ export const getUser = async (
     console.log("is hitting on utils");
 
     const payload = user.verifyToken(req.cookies.access_token);
-    // console.log("veriy token: " + payload);
 
     if (!payload) {
       // This const payload is scope of within the if clause so don't be confused with that
